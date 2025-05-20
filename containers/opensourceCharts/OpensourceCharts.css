@@ -1,0 +1,29 @@
+/* Open Source section removed */
+  width: 100%;
+}
+/* 
+.tb-item {
+    display: table-cell;
+} */
+
+/* To remove horizontal scroll */
+.main-div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1380px) {
+  /* Open Source section removed */
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Open Source section removed */
+    font-size: 25px;
+  }
+
+  .os-charts-body-div {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,13 @@
+/* Experience section removed */
+  margin: 50px;
+}
+
+.accord-panel {
+  font-family: "Google Sans Regular";
+}
+
+@media (max-width: 768px) {
+  /* Experience section removed */
+    margin: 20px;
+  }
+}
