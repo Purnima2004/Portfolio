@@ -1,0 +1,70 @@
+/* Single-page layout styles */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 80px 20px 40px; /* Increased top padding for better spacing with header */
+  scroll-margin-top: 80px; /* To offset fixed header height */
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fixed header adjustments */
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--body-bg, #fff);
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu styles */
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--highlight-color, #000);
+}
+
+/* Body styles */
+body {
+  margin: 0;
+  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #e6f3ff 0%, #fff5eb 100%);
+  overflow-x: hidden;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1380px) {
+  body {
+    font-size: 16px;
+    line-height: normal;
+  }
+  
+  .menu {
+    gap: 15px;
+  }
+}
